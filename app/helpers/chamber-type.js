@@ -7,6 +7,8 @@ export function chamberType(params) {
     return Ember.String.htmlSafe('<span class="glyphicon glyphicon-home"></span>');
   } else if(bill.chamber === 'senate') {
     return Ember.String.htmlSafe('<span class="glyphicon glyphicon-list-alt"></span>');
+  } else {
+    return Ember.String.htmlSafe('<span class="glyphicon glyphicon-link"></span>');  
   }
 
 }
