@@ -8,6 +8,9 @@ export default Ember.Route.extend({
     },
     vetoLookup(params) {
       this.transitionTo('veto_results', params.chamber);
+    },
+    committeeLookup(params) {
+      this.transitionTo('committee-results', params.chamberName);
     }
   }
 });

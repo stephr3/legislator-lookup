@@ -1,0 +1,6 @@
+<h1>Congressional Committees</h1>
+<ul>
+  {{#each model as |committee|}}
+    <li>{{chamber-type committee}} {{committee.name}}</li>
+  {{/each}}
+</ul>
