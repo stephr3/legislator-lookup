@@ -1,0 +1,6 @@
+<h1>Vetoed Bills</h1>
+<ul>
+  {{#each model as |bill|}}
+    <li>{{bill.chamber}} | Introduced on: {{bill.introduced_on}} | Vetoed on: {{bill.history.vetoed_at}} | {{bill.official_title}}</li>
+  {{/each}}
+</ul>
