@@ -1,10 +1,2 @@
 <h1>Subcommittees</h1>
-{{#if showSubcommittees}}
-<ul>
-  {{#each model as |subcommittee|}}
-    <li>{{subcommittee.name}}</li>
-  {{/each}}
-</ul>
-{{else}}
-<p>There are no subcommittees for this committee</p>
-{{/if}}
+{{subcommittee-tile results=model}}
