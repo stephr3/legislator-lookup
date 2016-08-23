@@ -1,1 +1,40 @@
 @import "ember-power-select";
+
+.jumbotron {
+  background-image: url('http://az616578.vo.msecnd.net/files/2016/06/30/636028491160779307-427101620_30036-00-rfr-eagle_with_flag_and_constitution_1600px.jpg');
+  background-position: center;
+  h1  {
+    color: steelblue;
+    -webkit-text-stroke: 1px white;
+  }
+}
+
+h1 {
+  color: #a9212e;
+  -webkit-text-stroke: 1px white;
+}
+
+body {
+  background-image: url('http://www.hd-freewallpapers.com/upload/latest-wallpapers/desktop-american-flag-eagle-pics-free-download.jpg');
+  background-position: center;
+}
+
+.glyphicon-star {
+  color: white;
+}
+
+.btn:hover {
+  .glyphicon-star {
+    color: #a9212e;
+  }
+
+}
+
+li {
+  color: white;
+}
+
+
+a {
+    color: white;
+}

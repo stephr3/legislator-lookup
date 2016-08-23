@@ -1,7 +1,7 @@
 <h1>Vetoed Bills Lookup</h1>
 <form>
   <div class="form-group">
-    {{input value=chamber placeholder="house or senate?" id="chamber"}}
+    {{input value=chamber placeholder="house or senate?" id="chamber" class="form-control"}}
   </div>
-  <button {{action 'vetoLookup'}}>Submit</button>
+  <button class="btn btn-primary" {{action 'vetoLookup'}}><span class="glyphicon glyphicon-star"></span>Submit<span class="glyphicon glyphicon-star"></span></button>
 </form>

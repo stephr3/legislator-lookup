@@ -1,7 +1,19 @@
 <h1>Committee Lookup</h1>
 <form>
   <div class="form-group">
-    {{input value=chamberName placeholder="house, senate or joint?" id="chamberName"}}
+    {{input value=chamberName placeholder="house, senate or joint?" id="chamberName" class="form-control"}}
   </div>
-  <button {{action 'committeeLookup'}}>Submit</button>
+  <button class="btn btn-primary" {{action 'committeeLookup'}}><span class="glyphicon glyphicon-star"></span>Submit<span class="glyphicon glyphicon-star"></span></button>
 </form>
+
+
+<!-- {{#power-select
+  options=chambers
+  searchField="name"
+  selected=selected
+  onchange=(action (mut selected))
+  value=chamberName
+  as |chambers|
+}}
+  {{chambers.name}}
+{{/power-select}} -->

@@ -1,6 +1,8 @@
 <h1>Congressional Committees</h1>
-<ul>
+<div class="committee-results">
+  <ul>
   {{#each model as |committee|}}
     <li>{{chamber-type committee}} {{#link-to 'committee' committee.committee_id}}{{committee.name}}{{/link-to}}</li>
   {{/each}}
 </ul>
+</div>

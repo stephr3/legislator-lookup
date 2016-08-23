@@ -1,6 +1,11 @@
 <h1>Vetoed Bills</h1>
+<div class="bill-results">
 <ul>
   {{#each model as |bill|}}
-    <li>{{chamber-type bill}} Introduced on: {{intro-date-format bill}} | Vetoed on: {{date-format bill}} | {{bill.official_title}}</li>
+    {{chamber-type bill}}
+    <li>Introduced on: {{intro-date-format bill}}</li>
+    <li>Vetoed on: {{date-format bill}}</li>
+    <li>Official Title: {{bill.official_title}}</li>
   {{/each}}
 </ul>
+</div>

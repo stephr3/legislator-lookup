@@ -2,9 +2,8 @@
 
 <form>
   <div class="form-group">
-    <label for="zip">Zip</label>
-    {{input value=zip id="zip"}}
+    {{input value=zip id="zip" placeholder="Zip Code" class="form-control"}}
   </div>
 
-  <button class="btn btn-primary" {{action 'zipLookup'}}>Submit</button>
+  <button class="btn btn-primary" {{action 'zipLookup'}}><span class="glyphicon glyphicon-star"></span>Submit<span class="glyphicon glyphicon-star"></span></button>
 </form>
